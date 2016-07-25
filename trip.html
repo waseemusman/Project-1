@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Trip-Home</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<style>
+h3, h4 
+	{
+		margin: 10px 0 30px 0;
+		letter-spacing: 10px;      
+		font-size: 28px;
+		color: #111;
+	}
+.navbar
+	{
+		font-family: Montserrat, sans-serif;
+		margin-bottom: 0;
+		background-color: #2d2d30;
+		border: 0;
+		font-size: 11px !important;
+		letter-spacing: 4px;
+		opacity: 0.7;
+	}
+.navbar li a, .navbar .navbar-brand 
+	{ 
+		color: #d5d5d5 !important;
+	}
+.navbar-nav li a:hover 
+	{
+		color: #fff !important;
+	}
+.navbar-nav li.active a 
+	{
+		color: #fff !important;
+		background-color: #29292c !important;
+	}
+.navbar-default .navbar-toggle 
+	{
+		border-color: transparent;
+	}
+.container 
+	{
+		padding: 80px 120px;
+	}
+.person 
+	{
+		border: 10px solid transparent;
+		margin-bottom: 25px;
+		width: 80%;
+		height: 80%;
+		opacity: 0.7;
+	}
+.person:hover {
+		border-color: #f1f1f1;
+	}
+.carousel-inner img 
+	{
+		width: 100%; /* Set width to 100% */
+		margin: auto;
+	}
+.carousel-caption h3 
+	{
+		color: #fff !important;
+	}
+footer nav 
+  {
+    float: center;
+      
+      
+  }
+footer nav ul li 
+  {
+    margin-left: 20px;
+    margin-top: 10px;
+    list-style: none;
+    display: inline;
+  }
+    
+footer nav ul li a 
+  {
+    font-family: lato;
+    font-weight: 400px;
+    font-size: 16px;
+    color: #fff;
+  }
+    
+footer 
+  {
+           
+    height: 30%;
+    vertical-align: middle;
+    width: 100%;
+    background-color: #222;
+  }
+
+</style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+	<!--Nav Bar-->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand" href="#myPage"><img src="t.png" alt="Trip Go" style="height:33px;margin-top:-7px;"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="trip.html">HOME</a></li>
+					<li><a href="kashmir/ali.html">Kashmir</a></li>
+					<li><a href="gilgit/my.html">Gilgit</a></li>
+					<li><a href="murree/murree.html">Murree</a></li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<!--Slider-->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0     " class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="1.jpg" alt="New York" width="1200" height="700">
+				<div class="carousel-caption">
+					<h3>Gilgit</h3>
+					<p>.</p>
+				</div>      
+			</div>
+
+			<div class="item">
+				<img src="2.jpg" alt="Chicago" width="1200" height="700">
+				<div class="carousel-caption">
+					<h3>Kashmir</h3>
+					<p>Heaven On Earth</p>
+				</div>      
+			</div>
+		
+			<div class="item">
+				<img src="3.jpg" alt="Los Angeles" width="1200" height="7 00">
+				<div class="carousel-caption">
+					<h3>Murree</h3>
+					<p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
+				</div>      
+			</div>
+		</div>
+
+		<!-- Left and right controls -->
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		  <span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		  <span class="sr-only">Next</span>
+		</a>
+	</div>
+
+	<!-- Container (TOUR Section) -->
+<div id="tour" class="bg-1">
+	<div class="container">
+		<h3 class="text-center">TOUR DATES</h3>
+		<p class="text-center">Lorem ipsum we'll play you some music.<br> Remember to book your tickets!</p>
+		<ul class="list-group">
+			<li class="list-group-item">July <span class="label label-danger">Sold Out!</span></li>
+			<li class="list-group-item">August <span class="label label-danger">Sold Out!</span></li> 
+			<li class="list-group-item">September <span class="badge">3</span></li> 
+		</ul>
+    
+		<div class="row text-center">
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<img src="4.jpg" alt="Gilgit" width="400" height="300">
+					<p><strong>Gilgit</strong></p>
+					<p>Friday 2 September 2016</p>
+					<button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<img src="2.jpg" alt="Kashmir" width="400" height="300">
+					<p><strong>Kashmir</strong></p>
+					<p>Sunday 4 September 2016</p>
+					<button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<img src="5.jpg" alt="San Francisco" width="400" height="300">
+					<p><strong>Murree</strong></p>
+					<p>Wednesday 7 September 2016</p>
+					<button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+				</div>
+			</div>
+		</div>
+	</div>
+  
+  <!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+    
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">×</button>
+					<h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+				</div>
+				<div class="modal-body">
+						<form role="form">
+					<div class="form-group">
+						<label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
+						<input type="number" class="form-control" id="psw" placeholder="How many?">
+					</div>
+					<div class="form-group">
+						<label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+						<input type="text" class="form-control" id="usrname" placeholder="Enter email">
+					</div>
+					<button type="submit" class="btn btn-block">Pay 
+						<span class="glyphicon glyphicon-ok"></span>
+					</button>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+						<span class="glyphicon glyphicon-remove"></span> Cancel
+					</button>
+					<p>Need <a href="#">help?</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Footer-->
+<footer>
+  <div>
+    <nav> 
+      <ul>
+          <li><a href="trip.html">Home</a></li>
+          <li><a href="kashmir/ali.html">kashmir</a></li>
+          <li><a href="gilgit/my.html">Gilgit-Baltistan</a></li>
+          <li><a href="murree/murree.html">Murree</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+
+
+
+</body>
+<html>
